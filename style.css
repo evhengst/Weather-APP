@@ -1,0 +1,85 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  background: #222;
+  background-image: url("https://source.unsplash.com/1920x1080/?tokyo");
+}
+
+.card {
+  background: #000000dc;
+  color: white;
+  padding: 2em;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 420px;
+  margin: 1em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 0; */
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  width: 3.5em;
+  height: 3.5em;
+  background: #50505056;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  width: calc(100% - 100px);
+  border-radius: 20pc;
+  background: #50505056;
+  font-family: inherit;
+  font-size: 120%;
+  color: white;
+}
+
+button:hover {
+  background: #81818170;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 5px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0, 5em;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading::after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
